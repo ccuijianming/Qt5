@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>add.png</file>
+        <file>Bold.png</file>
+        <file>delete.png</file>
+        <file>exit.png</file>
+        <file>insert.png</file>
+        <file>mathCAD.png</file>
+        <file>open.png</file>
+        <file>storage.png</file>
+        <file>alignCenter.png</file>
+        <file>alignLeft.png</file>
+        <file>alignRight.png</file>
+    </qresource>
+</RCC>
