@@ -1,5 +1,11 @@
+https://www.cnblogs.com/wansuiwht/p/12046449.html
+
+//MainWindow.h
 #pragma execution_character_set("utf-8")
 
 //解决汉字乱码问题，main函数
 QTextCodec *codec = QTextCodec::codecForName("UTF-8");
 QTextCodec::setCodecForLocale(codec);
+
+//sources.cpp
+QString::fromLocal8Bit("提示");
