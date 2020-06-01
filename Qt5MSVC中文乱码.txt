@@ -1,11 +1,14 @@
 https://www.cnblogs.com/wansuiwht/p/12046449.html
 
-//MainWindow.h
+//source.cpp
 #pragma execution_character_set("utf-8")
+//source.cpp
+QString::fromLocal8Bit("提示");
 
-//解决汉字乱码问题，main函数
+
+http://c.biancheng.net/view/1877.html
+
+//main函数，解决读写有中文内容的文本文件汉字乱码问题
+//设置 UTF-8 为应用程序使用的编码解码器，对 Unicode 码支持
 QTextCodec *codec = QTextCodec::codecForName("UTF-8");
 QTextCodec::setCodecForLocale(codec);
-
-//sources.cpp
-QString::fromLocal8Bit("提示");
