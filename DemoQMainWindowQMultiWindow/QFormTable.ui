@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QFormTable</class>
+ <widget class="QMainWindow" name="QFormTable">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>487</width>
+    <height>277</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTableView" name="tableView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>487</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actSetSize"/>
+   <addaction name="actSetHeader"/>
+   <addaction name="actLocate"/>
+   <addaction name="separator"/>
+   <addaction name="actClose"/>
+  </widget>
+  <action name="actSetSize">
+   <property name="icon">
+    <iconset resource="image/image.qrc">
+     <normaloff>:/spreadSheet.png</normaloff>:/spreadSheet.png</iconset>
+   </property>
+   <property name="text">
+    <string>定义表格大小</string>
+   </property>
+  </action>
+  <action name="actSetHeader">
+   <property name="icon">
+    <iconset resource="image/image.qrc">
+     <normaloff>:/headline.png</normaloff>:/headline.png</iconset>
+   </property>
+   <property name="text">
+    <string>设置表头</string>
+   </property>
+  </action>
+  <action name="actLocate">
+   <property name="icon">
+    <iconset resource="image/image.qrc">
+     <normaloff>:/location.png</normaloff>:/location.png</iconset>
+   </property>
+   <property name="text">
+    <string>定位单元格</string>
+   </property>
+  </action>
+  <action name="actClose">
+   <property name="icon">
+    <iconset resource="image/image.qrc">
+     <normaloff>:/exit.png</normaloff>:/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="image/image.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actClose</sender>
+   <signal>triggered()</signal>
+   <receiver>QFormTable</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>243</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
